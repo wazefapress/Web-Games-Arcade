@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>مركز ألعاب أونلاين | هيثم زيدان</title>
+    <meta name="description" content="العب أفضل ألعاب الويب الكلاسيكية والحديثة أونلاين مجاناً. استمتع بألعاب الأونو، الشطرنج، الدومينو، الطاولة، والمزيد في مركز ألعاب هيثم زيدان.">
+    <meta name="keywords" content="ألعاب أونلاين, ألعاب ويب, شطرنج أونلاين, اونو, تركس, طاولة, دومينو, سلم وثعبان, هيثم زيدان, ألعاب متصفح">
+    <meta name="author" content="Haytham Zeidan">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="مركز ألعاب أونلاين | هيثم زيدان">
+    <meta property="og:description" content="مجموعة من أفضل ألعاب الويب الخفيفة والممتعة، جاهزة للعب مباشرة من المتصفح بدون تحميل.">
+    <!-- أضف رابط صورة حقيقية هنا -->
+    <meta property="og:image" content="logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="مركز ألعاب أونلاين | هيثم زيدان">
+    <meta property="twitter:description" content="مجموعة من أفضل ألعاب الويب الخفيفة والممتعة، جاهزة للعب مباشرة من المتصفح بدون تحميل.">
+
+    <!-- PWA Setup (تأكد من إنشاء ملف manifest.json لاحقاً) -->
+    <meta name="theme-color" content="#0f172a">
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <!-- Bootstrap 5 CSS (RTL) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.json">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary-color: #0ea5e9;
+            --text-color: #f8fafc;
+            --hover-color: #38bdf8;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Tajawal', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar-brand {
+            font-weight: 800;
+            color: var(--primary-color) !important;
+            font-size: 1.5rem;
+        }
+
+        .ad-space {
+            background: #cbd5e1;
+            color: #475569;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 90px;
+            margin: 20px 0;
+            font-weight: bold;
+            border: 2px dashed #94a3b8;
+            text-align: center;
+        }
+
+        .game-card {
+            background-color: var(--card-bg);
+            border: 1px solid #334155;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 15px;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(14, 165, 233, 0.2);
+            border-color: var(--hover-color);
+            color: white;
+        }
+
+        .game-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            transition: color 0.3s ease;
+        }
+
+        .game-card:hover .game-icon {
+            color: var(--hover-color);
+        }
+
+        .game-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .action-btns .btn {
+            border-radius: 50px;
+            padding: 8px 24px;
+            font-weight: 700;
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: #0b1120;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: var(--hover-color);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-dark bg-dark shadow-sm py-3" style="background-color: #0b1120 !important;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-gamepad me-2"></i> مركز ألعاب أونلاين
+            </a>
+            <a href="https://github.com/wazefapress" target="_blank" class="btn btn-outline-light rounded-circle px-2">
+                <i class="fa-brands fa-github fs-4"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container flex-grow-1">
+        
+        <!-- مساحة إعلانية متجاوبة -->
+        <div class="row">
+            <div class="col-12">
+                   <a href="https://www.patreon.com/cw/haythamzeidan/membership" target="_blank" rel="noopener noreferrer">
+                <img src="banner.svg" alt="دعم تطوير اللعبة" class="ad-img">
+            </a>
+            </div>
+        </div>
+<p></p>
+        <!-- أزرار الإجراءات (مشاركة & تثبيت) -->
+        <div class="row mb-4">
+            <div class="col-12 d-flex justify-content-center gap-3 action-btns">
+                <button id="shareBtn" class="btn btn-primary shadow-sm">
+                    <i class="fa-solid fa-share-nodes me-2"></i> مشاركة المركز
+                </button>
+                <button id="installAppBtn" class="btn btn-success shadow-sm d-none">
+                    <i class="fa-solid fa-download me-2"></i> تثبيت التطبيق
+                </button>
+            </div>
+        </div>
+
+        <!-- شبكة الألعاب (Game Grid) -->
+        <div class="row g-4 mb-5" id="gamesContainer">
+            <!-- سيتم حقن الألعاب هنا عبر JavaScript لسهولة الإدارة -->
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mb-1">جميع الحقوق محفوظة &copy; <span id="year"></span></p>
+            <p class="mb-0">
+                تصميم وتطوير بكل ❤️ بواسطة 
+                <a href="https://www.patreon.com/haythamzeidan" target="_blank"><strong>هيثم زيدان</strong></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // تحديث السنة التلقائي في الفوتر
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // قائمة الألعاب
+        const games = [
+            { name: "اونو أونلاين", url: "https://uno-online.haythamzeidan.workers.dev/", icon: "fa-solid fa-cards" },
+            { name: "أونو", url: "https://uno.haythamzeidan.workers.dev/", icon: "fa-solid fa-layer-group" },
+            { name: "تركس", url: "https://trix-online.haythamzeidan.workers.dev/", icon: "fa-solid fa-khanda" },
+            { name: "الطاولة", url: "https://tawla.haythamzeidan.workers.dev/", icon: "fa-solid fa-dice" },
+            { name: "شطرنج", url: "https://chess.haythamzeidan.workers.dev/", icon: "fa-solid fa-chess" },
+            { name: "دومينو", url: "https://domino.haythamzeidan.workers.dev/", icon: "fa-solid fa-cubes-stacked" },
+            { name: "السلم و الثعبان", url: "https://snake.haythamzeidan.workers.dev/", icon: "fa-solid fa-staff-snake" },
+            { name: "تيك تاك تو", url: "https://xo-online.haythamzeidan.workers.dev/", icon: "fa-solid fa-xmarks-lines" },
+            { name: "الداما", url: "https://dama.haythamzeidan.workers.dev/", icon: "fa-solid fa-chess-board" },
+            { name: "تركيب الصور", url: "https://puzzle.haythamzeidan.workers.dev/", icon: "fa-solid fa-puzzle-piece" },
+            { name: "مكعب كوبيك", url: "https://cube.haythamzeidan.workers.dev/", icon: "fa-solid fa-cube" },
+            { name: "المليونير", url: "https://millionaire.haythamzeidan.workers.dev/", icon: "fa-solid fa-money-bill-wave" },
+            { name: "الاقتباس اليومي", url: "https://quote.haythamzeidan.workers.dev/", icon: "fa-solid fa-quote-right" }
+        ];
+
+        // حقن الألعاب في الـ HTML
+        const container = document.getElementById('gamesContainer');
+        games.forEach(game => {
+            // استخدام أيقونة بديلة إذا لم تكن الأيقونة المحددة موجودة في النسخة المجانية
+            let iconClass = game.icon.replace('fa-cards', 'fa-sd-card').replace('fa-khanda', 'fa-diamond').replace('fa-staff-snake', 'fa-worm').replace('fa-xmarks-lines', 'fa-xmark');
+            
+            const card = `
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="${game.url}" target="_blank" class="game-card">
+                        <i class="${iconClass} game-icon"></i>
+                        <h2 class="game-title text-center h5">${game.name}</h2>
+                    </a>
+                </div>
+            `;
+            container.innerHTML += card;
+        });
+
+        // ميزة مشاركة الرابط (Web Share API)
+        const shareBtn = document.getElementById('shareBtn');
+        shareBtn.addEventListener('click', async () => {
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: 'مركز ألعاب أونلاين | هيثم زيدان',
+                        text: 'العب أفضل ألعاب الويب الخفيفة والممتعة مجاناً بدون تحميل!',
+                        url: window.location.href
+                    });
+                } catch (err) {
+                    console.log('خطأ في المشاركة:', err);
+                }
+            } else {
+                alert('عذراً، متصفحك لا يدعم ميزة المشاركة التلقائية. يمكنك نسخ الرابط مباشرة.');
+            }
+        });
+
+        // منطق تثبيت التطبيق (PWA)
+        let deferredPrompt;
+        const installAppBtn = document.getElementById('installAppBtn');
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            // منع المتصفح من إظهار النافذة التلقائية
+            e.preventDefault();
+            // حفظ الحدث لاستخدامه لاحقاً
+            deferredPrompt = e;
+            // إظهار زر التثبيت
+            installAppBtn.classList.remove('d-none');
+        });
+
+        installAppBtn.addEventListener('click', async () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                if (outcome === 'accepted') {
+                    console.log('تم قبول تثبيت التطبيق');
+                }
+                deferredPrompt = null;
+                installAppBtn.classList.add('d-none');
+            }
+        });
+        
+    </script>
+    <script>
+    // تسجيل Service Worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js')
+      .then((registration) => {
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, (err) => {
+        console.log('ServiceWorker registration failed: ', err);
+      });
+  });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "مركز ألعاب أونلاين | هيثم زيدان",
+  "short_name": "ألعاب هيثم",
+  "description": "العب أفضل ألعاب الويب الكلاسيكية والحديثة أونلاين مجاناً.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0ea5e9",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
