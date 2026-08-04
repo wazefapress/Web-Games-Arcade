@@ -48,3 +48,4 @@
 https://games.haythamzeidan.workers.dev/
 
 أو 
+https://wazefapress.github.io/Web-Games-Arcade/
